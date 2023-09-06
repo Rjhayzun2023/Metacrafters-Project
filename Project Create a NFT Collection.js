@@ -45,7 +45,7 @@ function listNFTs () {
     let i = 0; //local variable
     console.log("----------LIST OF NFT's-----------");
     for(i ; i < nftMintedHolder.length; i++) {
-        console.log("ID: " + [i+1])
+        console.log("ID: " + Math.random() * 100) + 1; //Adds rarity to the NFT
         console.log("NFT Name: " + nftMintedHolder[i]["name"]);
         console.log("NFT Frame Shape: " + nftMintedHolder[i]["frameShape"]);
         console.log("NFT Type: " + nftMintedHolder[i]["type"]);
@@ -74,6 +74,3 @@ listNFTs ();
 
 //displays the total number of NFT's
 getTotalSupply ();
-
-
-
